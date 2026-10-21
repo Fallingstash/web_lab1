@@ -1,0 +1,103 @@
+/* --- ТОКЕНЫ (по методичке) --- */
+:root {
+    --color-primary: #7B61FF; /* Фиолетовый из макета */
+    --color-text: #1B1B1F;
+    --color-gray: #5B5B66;
+    --color-bg: #ffffff;
+    --color-bg-light: #F8F8FB;
+    --font-main: 'Inter', system-ui, sans-serif;
+    --space-2: 0.5rem;
+    --space-4: 1rem;
+    --space-8: 2rem;
+    --space-12: 3rem;
+    --space-16: 4rem;
+    --radius: 12px;
+    --container: 1200px;
+}
+
+/* --- БАЗОВЫЕ СТИЛИ --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-main);
+    color: var(--color-text);
+    background-color: var(--color-bg);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+a { text-decoration: none; color: inherit; }
+ul { list-style: none; }
+img { max-width: 100%; display: block; border-radius: var(--radius); }
+
+.container {
+    width: min(100% - var(--space-8), var(--container));
+    margin-inline: auto;
+}
+
+/* Кнопки */
+.btn {
+    display: inline-block;
+    padding: var(--space-2) var(--space-4);
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+}
+.btn-primary { background: var(--color-primary); color: white; }
+.btn-outline { border: 1px solid var(--color-primary); color: var(--color-primary); }
+
+/* --- ШАПКА --- */
+.site-header { padding-block: var(--space-4); border-bottom: 1px solid #eee; }
+.header-inner { display: flex; justify-content: space-between; align-items: center; }
+.logo { font-size: 1.5rem; font-weight: bold; color: var(--color-primary); }
+.nav-list { display: flex; gap: var(--space-8); font-size: 0.9rem; color: var(--color-gray); }
+.nav-list a:hover { color: var(--color-primary); }
+.header-actions { display: flex; gap: var(--space-4); }
+
+/* --- HERO (Первый экран) --- */
+.hero { padding-block: var(--space-16); background-color: var(--color-bg-light); }
+.hero-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-8);
+    align-items: center;
+}
+.hero h1 { font-size: 3.5rem; line-height: 1.1; margin-bottom: var(--space-4); }
+.hero p { color: var(--color-gray); margin-bottom: var(--space-8); font-size: 1.1rem; max-width: 80%; }
+.hero-buttons { display: flex; gap: var(--space-4); align-items: center; }
+.hero-image { width: 100%; height: 400px; object-fit: cover; border-radius: var(--radius); }
+
+/* --- FEATURED (Блок про Швейцарию) --- */
+.featured { padding-block: var(--space-16); }
+.featured-inner { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-8); align-items: center; }
+.subtitle { display: block; color: var(--color-primary); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: var(--space-2); }
+.featured h2 { font-size: 2.5rem; margin-bottom: var(--space-4); }
+.featured p { color: var(--color-gray); margin-bottom: var(--space-8); }
+
+/* --- КАРТОЧКИ (Discover & Recent) --- */
+.section-title { text-align: center; font-size: 2rem; margin-bottom: var(--space-8); }
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--space-8);
+}
+.card { background: #fff; border-radius: var(--radius); overflow: hidden; }
+.card img { height: 200px; object-fit: cover; width: 100%; }
+.card-content { padding: var(--space-4); }
+.card h3 { font-size: 1.2rem; margin-bottom: var(--space-2); }
+.card p { color: var(--color-gray); font-size: 0.9rem; }
+
+/* --- ФОРМА ПОДПИСКИ --- */
+.subscribe { padding-block: var(--space-16); background-color: var(--color-bg-light); text-align: center; }
+.subscribe-form { max-width: 500px; margin: 0 auto; display: flex; flex-direction: column; gap: var(--space-4); margin-top: var(--space-8); }
+.subscribe-form input {
+    padding: var(--space-4); border: 1px solid #ddd; border-radius: 8px; font-family: inherit;
+}
+
+/* --- ПОДВАЛ --- */
+.site-footer { padding-block: var(--space-8); text-align: center; color: var(--color-gray); border-top: 1px solid #eee; }
