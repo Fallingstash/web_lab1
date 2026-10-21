@@ -3,7 +3,7 @@
 Учебный проект: две страницы макета, HTML и CSS без программной логики.
 
 - **Макет:** [Figma](https://www.figma.com/design/xc3vHAMZNq9Nm9x2TgnHei/Locofy-Sample-Project---Talking-Travel--Community-)
-- **Опубликованная версия:** [Ссылка на GitHub Pages] *(вставишь после публикации)*
+- **Опубликованная версия:** https://fallingstash.github.io/web_lab1/
 
 ## Структура проекта
 - `index.html` — главная страница
