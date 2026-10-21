@@ -1,1 +1,97 @@
- 
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talking Travel - Блог</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Шапка (идентична главной) -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="index.html" class="logo">Talking Travel</a>
+            <nav aria-label="Основная навигация">
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button aria-label="Поиск">🔍</button>
+                <button aria-label="Профиль">👤</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Основной контент блога -->
+    <main>
+        <section class="blog-section">
+            <div class="container">
+                <h1 class="page-title">Blog</h1>
+                
+                <!-- Сетка записей -->
+                <div class="card-grid">
+                    
+                    <!-- Пост 1 -->
+                    <article class="card">
+                        <img src="https://images.unsplash.com/photo-1516483638261-f4085ee6b2ce?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Горная тропа">
+                        <div class="card-content">
+                            <h2 class="card-title"><a href="#">Как спланировать первый поход</a></h2>
+                            <p>Снаряжение, маршрут и расчет времени для новичков.</p>
+                            <!-- Семантический тег time для даты (требование методички) -->
+                            <footer class="card-meta">
+                                <time datetime="2026-04-12">12 апреля 2026</time> • Анна К.
+                            </footer>
+                        </div>
+                    </article>
+
+                    <!-- Пост 2 -->
+                    <article class="card">
+                        <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Озеро">
+                        <div class="card-content">
+                            <h2 class="card-title"><a href="#">Секретные места у озера Блед</a></h2>
+                            <p>Где остановиться и что посмотреть, кроме главных достопримечательностей.</p>
+                            <footer class="card-meta">
+                                <time datetime="2026-04-10">10 апреля 2026</time> • Игорь М.
+                            </footer>
+                        </div>
+                    </article>
+
+                    <!-- Пост 3 -->
+                    <article class="card">
+                        <img src="https://images.unsplash.com/photo-1504280386973-5298a9a4d888?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Кемпинг">
+                        <div class="card-content">
+                            <h2 class="card-title"><a href="#">Что взять в поход с палаткой</a></h2>
+                            <p>Список вещей, которые точно пригодятся вам в лесу.</p>
+                            <footer class="card-meta">
+                                <time datetime="2026-04-05">5 апреля 2026</time> • Олег П.
+                            </footer>
+                        </div>
+                    </article>
+
+                </div>
+
+                <!-- Постраничная навигация (требование методички) -->
+                <nav class="pagination" aria-label="Навигация по страницам блога">
+                    <ul class="pagination-list">
+                        <li><a href="#" aria-current="page">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 Talking Travel. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
