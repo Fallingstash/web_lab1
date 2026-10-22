@@ -156,6 +156,13 @@ img { max-width: 100%; display: block; border-radius: var(--radius); }
     .hero h1 { font-size: 2rem; }
     .hero-buttons { flex-direction: column; width: 100%; }
     .btn { width: 100%; text-align: center; }
+
+/* Видимый фокус для клавиатуры (требование доступности) */
+:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 4px;
+    border-radius: 4px;
+}
     
     .card-grid { grid-template-columns: 1fr; } /* Карточки в один столбец */
     
